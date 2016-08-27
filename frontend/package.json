@@ -20,6 +20,8 @@
     "babel-preset-stage-2": "^6.13.0",
     "babelify": "^7.3.0",
     "browserify": "^13.1.0",
+    "peer": "^0.2.8",
+    "peerjs": "^0.3.14",
     "webpack": "^1.13.2"
   },
   "scripts": {

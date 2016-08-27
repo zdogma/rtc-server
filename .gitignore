@@ -16,7 +16,10 @@ pickle-email-*.html
 /frontend/node_modules/
 !/app/assets/javascripts/pc/.keep
 !/app/assets/javascripts/sp/.keep
+
 /app/assets/javascripts/**/*.js
+!/app/assets/javascripts/common.js
+
 /frontend/npm-debug.log
 npm-debug.log
 
@@ -41,3 +44,5 @@ bower.json
 
 # Ignore pow environment settings
 .powenv
+
+.env*
