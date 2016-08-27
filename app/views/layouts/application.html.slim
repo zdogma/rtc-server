@@ -3,9 +3,13 @@ html
   head
     title
       | Title
+    script src="http://cdn.peerjs.com/0.3/peer.min.js"
+
     = csrf_meta_tags
     = stylesheet_link_tag 'pc/application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag "common", 'data-turbolinks-track': 'reload'
-    = javascript_include_tag_if_exists "pc/#{controller_name}/#{action_name}.js", 'data-turbolinks-track': 'reload'
+
   body
     = yield
+
+  = javascript_include_tag_if_exists "pc/#{controller_name}/#{action_name}.js", 'data-turbolinks-track': 'reload'
